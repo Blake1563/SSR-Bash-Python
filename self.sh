@@ -10,7 +10,7 @@ updateme(){
 	if [[ -e ~/version.txt ]];then
 		rm -f ~/version.txt
 	fi
-	wget -q https://raw.githubusercontent.com/Readour/AR-B-P-B/master/version.txt
+	wget -q https://raw.githubusercontent.com/Blake1563/SSR-Bash-Python/master/version.txt
 	version1=`cat ~/version.txt`
 	version2=`cat /usr/local/SSR-Bash-Python/version.txt`
 	if [[ "$version1" == "$version2" ]];then
