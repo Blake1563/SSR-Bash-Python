@@ -123,7 +123,7 @@ if [[ $devc == 4 ]];then
 	fi
 fi
 bbrcheck(){
-cd /usr/loca/SSR-Bash-Python
+cd /usr/local/SSR-Bash-Python
 #GitHub:https://github.com/ToyoDAdoubi
 if [[ ! -e bbr.sh ]]; then
 	echo "没有发现 BBR脚本，开始下载..."
