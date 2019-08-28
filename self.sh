@@ -52,7 +52,7 @@ updateme(){
 			export yn=n
 			cd ~
 			echo "开始下载安装包！"
-			curl -s -L https://down.fdos.me/install.sh > ./install-ssr.sh
+			curl -s -L https://raw.githubusercontent.com/Blake1563/SSR-Bash-Python/master/install.sh > ./install-ssr.sh
 			echo "开始安装！"
 			sleep 1s
 			bash ./install-ssr.sh
