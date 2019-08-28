@@ -52,14 +52,14 @@ checkup(){
 	nowdate=$(date +%Y-%m-%d)
 	if [[ ! -e ~/version.txt || ! -e /tmp/yiyan.date ]];then
 		echo "${nowdate}" > /tmp/yiyan.date
-		curl -s -L https://git.fdos.me/stack/AR-B-P-B/raw/develop/version.txt > ~/version.txt
+		curl -s -L https://raw.githubusercontent.com/Blake1563/SSR-Bash-Python/master/version.txt > ~/version.txt
 		version1=`cat ~/version.txt`
 	else
 		if [[ ${nowdate} == $(cat /tmp/yiyan.date) ]];then
 			version1=`cat ~/version.txt`
 		else
 			echo "${nowdate}" > /tmp/yiyan.date
-			curl -s -L https://git.fdos.me/stack/AR-B-P-B/raw/develop/version.txt > ~/version.txt
+			curl -s -L https://raw.githubusercontent.com/Blake1563/SSR-Bash-Python/master/version.txt > ~/version.txt
 			version1=`cat ~/version.txt`
 		fi
 	fi
